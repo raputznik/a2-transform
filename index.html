@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html>
+<title>Jeremy CSS3 Transforms</title>
+<head>
+	<style type="text/css">
+	.div1 {
+		height:100px;
+		width:100px;
+		border:2px solid;
+		border-radius:25px;
+		background:#9bc159;
+		transition:width 1s, height 1s;
+		-moz-transition:width 1s, height 1s;
+		-webkit-transition:width 1s, height 1s;
+	}
+
+	.div1:hover {
+		height:150px;
+		width:75px;
+	}
+
+	.div2 {
+		height:100px;
+		width:100px;
+		border:2px solid;
+		border-radius:25px;
+		background:#c4815c;
+  -webkit-opacity: 0.25;
+  -moz-opacity: 0.25;
+  opacity: 0.25;
+-webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
+} 
+
+.div2:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+} 
+
+p{
+	font-family:Arial, Helvetica, sans-serif;
+	color:white;
+}
+	</style>
+</head>
+	
 <body>
 
-<p>This is some text.</p>
 
-<div style="color:#0000FF">
-  <h3>This is a heading in a div element</h3>
-  <p>This is some text in a div element.</p>
-</div>
 
-<p>This is some text.</p>
+<div class="div1"><p align="center"> STRETCH</p></div>
+
+<br>
+
+<div class="div2"><p align="center"> FADE</p></div>
+
 
 </body>
 </html>

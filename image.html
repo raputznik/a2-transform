@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Jeremy Dahl | Week 2 CSS3 Transitions</title>
+		<style>
+			div {
+		transition:width 1s, height 1s;
+		-webkit-transition:width 2s, height 2s, -webkit-transform 2s;
+	}
+
+	div:hover {
+		width:200px;
+		height:200px;
+		transform:rotate(180deg);
+		-webkit-transform:rotate(180deg);
+	}
+
+			#crossfade {
+				position:relative;
+				height:309px;
+				width:468px;
+			}
+			#crossfade img {
+				position:absolute;
+				left:0;
+				opacity: 1;
+				-webkit-transition: opacity 1s ease-in-out;
+				-moz-transition: opacity 1s ease-in-out;
+				-o-transition: opacity 1s ease-in-out;
+				-ms-transition: opacity 1s ease-in-out;	
+				transition: opacity 1s ease-in-out;
+			}
+
+			#crossfade img.top:hover {
+				opacity:0;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>A Thing Moving</h1>
+
+		<h1>A Cross-fading Image</h1>
+		<div id="crossfade">
+			<img class="bottom" src="images/bird1.jpg" />
+			<img class="top" src="images/bird2.jpg" />
+		</div>
+	</body>
+</html>
