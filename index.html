@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html>
-<title>Jeremy CSS3 Transforms</title>
 <head>
+	<meta charset="UTF-8">
+	<title>Jeremy CSS3 Transforms</title>	
 	<style type="text/css">
-	.div1 {
-		height:100px;
-		width:100px;
-		border:2px solid;
-		border-radius:25px;
-		background:#9bc159;
-		transition:width 1s, height 1s;
-		-moz-transition:width 1s, height 1s;
-		-webkit-transition:width 1s, height 1s;
-	}
+		.div1 {
+			height:100px;
+			width:100px;
+			border:2px solid;
+			border-radius:25px;
+			background:#9bc159;
+			transition:width 1s, height 1s;
+			-moz-transition:width 1s, height 1s;
+			-webkit-transition:width 1s, height 1s;
+		}
 
-	.div1:hover {
-		height:150px;
-		width:75px;
-	}
+		.div1:hover {
+			height:150px;
+			width:75px;
+		}
 
-	.div2 {
-		height:100px;
-		width:100px;
-		border:2px solid;
-		border-radius:25px;
-		background:#c4815c;
-  		-webkit-opacity: 0.25;
-  		-moz-opacity: 0.25;
-  		opacity: 0.25;
-		-webkit-transition: all 3s ease;
-	  	-moz-transition: all 3s ease;
-	  	transition: all 3s ease;
-} 
+		.div2 {
+			height:100px;
+			width:100px;
+			border:2px solid;
+			border-radius:25px;
+			background:#c4815c;
+	  		-webkit-opacity: 0.25;
+	  		-moz-opacity: 0.25;
+	  		opacity: 0.25;
+			-webkit-transition: all 3s ease;
+		  	-moz-transition: all 3s ease;
+		  	transition: all 3s ease;
+		} 
 
-.div2:hover {
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-} 
+		.div2:hover {
+		  -webkit-opacity: 1;
+		  -moz-opacity: 1;
+		  opacity: 1;
+		} 
 
-p{
-	font-family:Arial, Helvetica, sans-serif;
-	color:white;
-}
+		p {
+			text-align: center;
+			font-family:Arial, Helvetica, sans-serif;
+			color:white;
+		}
+		
 	</style>
+
 </head>
 	
 <body>
 
-<div class="div1"><p align="center"> STRETCH</p></div>
+	<div class="div1"><p> STRETCH</p></div>
 
-<br>
+	<br>
 
-<div class="div2"><p align="center"> FADE</p></div>
+	<div class="div2"><p> FADE</p></div>
 
 </body>
 </html>
